@@ -766,13 +766,123 @@ const docPageTemplate = {
 							},
 							children: [
 								{
-									tag: "h5",
-									content: "simplilearn acquires new york based fullstack academy",
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-1",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "simplilearn acquires new york based fullstack academy",
+										},
+										{
+											tag: "p",
+											content:
+												"The acquisition accelerates Simplilearn's journey to become the largest digital skills provider globally.",
+										},
+									],
 								},
 								{
-									tag: "p",
-									content:
-										"The acquisition accelerates Simplilearn's journey to become the largest digital skills provider globally.",
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-2",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "a modest start",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn begins its foray as a blog, sharing ideas on Project Management, and providing information and tips for aspirants.",
+										},
+									],
+								},
+								{
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-3",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "Making headway in the industry",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn get its first backer for further expansion, raising $3 Million in Series A funding.",
+										},
+									],
+								},
+								{
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-4",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "elevates 20,000+ lives",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn trains 20,000+ professionals across 50+ countries.",
+										},
+									],
+								},
+								{
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-5",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "Finding more success",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn raises $10 Million in Series B funding from Helion Venture Partners and Kalaari Capital.",
+										},
+									],
+								},
+								{
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-6",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "large certification training provider",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn reaches its next milestone, training 200,000+ professionals in 150+ countries, and becoming one of the world's largest certification training providers.",
+										},
+									],
+								},
+								{
+									tag: "div",
+									attributes: {
+										class: "through-title-content content-7",
+									},
+									children: [
+										{
+											tag: "h5",
+											content: "the mission continues",
+										},
+										{
+											tag: "p",
+											content:
+												"Simplilearn raises $15 Million in Series C funding from Mayfield Fund, Kalaari Capital, and Helion Venture Partners.",
+										},
+									],
 								},
 							],
 						},

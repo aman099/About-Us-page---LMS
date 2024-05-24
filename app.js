@@ -45,6 +45,38 @@ nextBtn.addEventListener("click", () => {
 
 const getCertifiedGrid = document.querySelector(".get-certified-grid");
 
-console.log(getCertifiedGrid.getBoundingClientRect().top);
-console.log(getCertifiedGrid.getBoundingClientRect().bottom >= screenTop);
+// console.log(getCertifiedGrid.getBoundingClientRect().top);
+// console.log(getCertifiedGrid.getBoundingClientRect().bottom >= screenTop);
 console.log(screenTop);
+
+const btnLeft = document.querySelector(".btn-left-cont");
+const btnRight = document.querySelector(".btn-right-cont");
+const throughTitleCont = document.querySelector(".through-title-cont");
+const throughTitleContent = document.querySelector(
+	".through-title-cont .through-title-content"
+);
+
+btnLeft.addEventListener("click", () => {
+	throughTitleCont.scrollBy({
+		left: throughTitleContent.offsetWidth * 1,
+		behavior: "smooth",
+	});
+	if (innerWidth < 400) {
+		throughTitleCont.scrollBy({
+			left: throughTitleContent.clientWidth * 1 + 40,
+			behavior: "smooth",
+		});
+	}
+});
+btnRight.addEventListener("click", () => {
+	throughTitleCont.scrollBy({
+		left: throughTitleContent.offsetWidth * -1,
+		behavior: "smooth",
+	});
+	if (innerWidth < 400) {
+		throughTitleCont.scrollBy({
+			left: throughTitleContent.clientWidth * -1 - 40,
+			behavior: "smooth",
+		});
+	}
+});

@@ -16,6 +16,26 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
+/* Through title Carousel */
+.through-title-cont {
+	display: grid;
+	grid-auto-flow: column;
+	/* grid-auto-columns: calc((100% / 3) - 12px); */
+	grid-auto-columns: 100%;
+	/* gap: 1rem; */
+	/*  */
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+.through-title-content {
+	scroll-snap-align: start;
+	width: 100%;
+	align-self: center;
+}
+/*  */
+
 /* Navbar */
 .navbar-container .navbar-cont-1 {
 	background-color: #fff;
@@ -835,17 +855,26 @@ section.privacy-policy p {
 	}
 	/*  */
 	.leadership-cards {
-		display: flex;
-		overflow: auto;
+		/* display: flex; */
+		/* overflow: auto; */
 		/*  */
 		padding: 20px;
 		/* transform: translate3d(452px, 0px, 0px); */
-		padding-left: 50px;
+		/* padding-left: 1200px; */
 		/* padding-right: 50px; */
 		/* max-width: 1200px; */
 		/* margin-left: 100px; */
 		/* width: 2808px; */
 		/* position: relative; */
+		display: grid;
+		grid-auto-flow: column;
+		/* grid-auto-columns: calc((100% / 3) - 12px); */
+		gap: 1rem;
+		/*  */
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		scrollbar-width: none;
 	}
 
 	/* .leadership-cards .leadership-card.card-3,
@@ -854,7 +883,11 @@ section.privacy-policy p {
 	.leadership-cards .leadership-card.card-6,
 	.leadership-cards .leadership-card.card-7,
 	.leadership-cards .leadership-card.card-8 {
-		display: none;
+		/* display: none; */
+	}
+	.leadership-cards .leadership-card.card {
+		scroll-snap-align: start;
+		width: 100%;
 	}
 	.meet-leadership-cont {
 		padding: 0 20px;
@@ -923,7 +956,7 @@ section.privacy-policy p {
 		width: 250px;
 	}
 	.leadership-cards .leadership-card.card-4 {
-		display: none;
+		/* display: none; */
 	}
 	.investors .investors-cont {
 		padding: 0 20px;
@@ -977,7 +1010,7 @@ section.privacy-policy p {
 	}
 	/* .leadership-cards .leadership-card.card-2, */
 	.leadership-cards .leadership-card.card-3 {
-		display: none;
+		/* display: none; */
 	}
 	.leadership-cards .leadership-card .leader-img img {
 		width: 200px;
@@ -1050,6 +1083,13 @@ section.privacy-policy p {
 		font-size: 18px;
 		padding-left: 20px;
 	}
+	.leadership-cards {
+		grid-auto-columns: calc((100% / 3) - 12px);
+	}
+	.leadership-cards .leadership-card h5 {
+		/* margin-bottom: 0px; */
+		font-size: 18px;
+	}
 	/*  */
 	.advancements .advancements-cont .cards .card h2 {
 		font-size: 24px;
@@ -1103,7 +1143,7 @@ section.privacy-policy p {
 		width: 100%;
 	}
 	.leadership-cards .leadership-card.card-2 {
-		display: none;
+		/* display: none; */
 	}
 	.leadership-cards .leadership-card h5 {
 		margin-bottom: 0px;
